@@ -87,11 +87,6 @@ scheduler.add_job(
     hour=22,
     minute=0
 )
-scheduler.add_job(
-    morning_reminder,
-    "interval",
-    seconds=30
-)
 
 def start_scheduler():
     scheduler.start()
